@@ -1,0 +1,9 @@
+ .check-mark {
+            display: inline-block;
+            color: #7bc043; /* Use similar green as in your image */
+            font-size: 24px;
+        }
+
+        .check-mark::before {
+            content: '✔'; /* Unicode character for checkmark */
+        }

@@ -1,0 +1,116 @@
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+} */
+
+.footer {
+    background: linear-gradient(to right, #1b0a41, #173b7c);
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-top {
+    /* text-align: center; */
+ 
+    margin-bottom: 40px;
+    
+}
+
+.footer-logo {
+    width: 170px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-column input {
+    width: calc(100% - 110px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.subscribe-column button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #76b900;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-column button:hover {
+    background-color: #669a00;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+
+.email-link, .linkedin-link {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.email-link img, .linkedin-link img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.icon-image{
+    width: 30px;
+    height: 30px;
+}
