@@ -11,6 +11,8 @@ import PaymentDashboardImg from "./Payment-Dashboard-Img.png";
 import WhatsappServices from "./whatsapp-services.png";
 import contactUs from "./contact-us.png";
 import aboutUs from "./about-us.png";
+import connectPeople from "./connect-people.png";
+import connectBots from "./connect-bots.png";
 export default {
   GreytSpaceLogo,
   technology,
@@ -25,4 +27,6 @@ export default {
   WhatsappServices,
   contactUs,
   aboutUs,
+  connectPeople,
+  connectBots,
 };

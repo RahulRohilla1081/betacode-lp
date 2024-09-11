@@ -13,7 +13,7 @@ function GreytSpace(ProductDetails) {
   useEffect(() => {
     setProductDetails(location.state.PRODUCT_DETAILS);
   }, [location.state]);
-console.log("Asdhasvhgdvasdas", ProductDetail);
+
 useEffect(() => {
   window.scrollTo(0, 0);
 }, []);

@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import IMAGES from "../../assets/IMAGES";
 import Navbar from "../../components/AppDrawer/Navbar";
 import Footer from "../Dashboard/Footer";
 import "./ContactUs.css";
+import axios from "axios";
 import StandardDropdown from "../../components/CustomDropdown/CustomDropdown";
+import Lottie from "react-lottie-player";
+import LOTTIE from "../../assets/LOTTIE";
+
 
 function ContactUs() {
   const [contactUsTransaction, setContactUsTransaction] = useState(false);
@@ -22,6 +26,9 @@ function ContactUs() {
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [ReqDemoAddFields, setReqDemoAddFields] = useState([
     {
       TITLE: "Full Name",
@@ -194,7 +201,10 @@ function ContactUs() {
         }
       });
       axios
-        .post(AXIOS.axiosUrl + AXIOS.emailSendForContactUs, payload)
+        .post(
+          "https://pdhanewala.com:7000/ContactUs/emailSendForContactUs",
+          payload
+        )
         .then((response) => {
           setContactUsResRecord(true);
           setContactUsTransaction(false);
@@ -334,11 +344,11 @@ function ContactUs() {
                         }}
                         onClick={() => {}}
                       >
-                        <Spinner
+                        {/* <Spinner
                           size="sm"
                           color="default"
                           labelColor="foreground"
-                        />
+                        /> */}
                       </button>
                     </div>
                   )}
@@ -382,7 +392,7 @@ function ContactUs() {
                       right: 0,
                     }}
                   >
-                    <CustomLottie
+                    <Lottie
                       loop
                       animationData={LOTTIE.confetti}
                       play

@@ -7,8 +7,12 @@ import Testing from "./Testing";
 import Products from "./screens/Products/Products";
 import ContactUs from "./screens/ContactUs/ContactUs";
 import AboutUs from "./screens/AboutUs/AboutUs";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <BrowserRouter>
       <Routes>

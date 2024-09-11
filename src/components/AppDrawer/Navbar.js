@@ -1,6 +1,7 @@
 import React from "react";
 import ICONS from "../../assets/ICONS";
 import { useNavigate } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -13,14 +14,14 @@ function Navbar() {
       </nav>
       <nav className="bg-white  fixed w-full z-20 top-6 start-0 border-b border-gray-200 dark:bg-white-800">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
+          <p className="flex items-center space-x-3 rtl:space-x-reverse">
             <img
               src={ICONS.BetaCodeLogo}
               alt="BetaCode Logo"
               className="w-[170px] h-[50px]"
+              onClick={() => {
+                navigate("/");
+              }}
             />
             {/* <img
               src="https://flowbite.com/docs/images/logo.svg"
@@ -30,7 +31,7 @@ function Navbar() {
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">
               Flowbite
             </span> */}
-          </a>
+          </p>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
               type="button"
@@ -69,35 +70,78 @@ function Navbar() {
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-transparent md:dark:bg-transparent dark:bg-transparent">
               <li>
-                <p className="relative group cursor-pointer">
-                  <span>Company</span>
-                  <span className="absolute -bottom-1 left-0 w-0 h-2 bg-blue-400 transition-all group-hover:w-full rounded-lg"></span>
+                <p
+                  className="relative group cursor-pointer"
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                >
+                  <span className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                    Home
+                  </span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-blue-400 transition-all group-hover:w-full rounded-lg"></span>
                 </p>
               </li>
               <li>
                 <p
+                  className="relative group cursor-pointer"
                   onClick={() => {
                     navigate("/about-us");
                   }}
-                  className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                ></p>
+                >
+                  <span className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                    About Us
+                  </span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-blue-400 transition-all group-hover:w-full rounded-lg"></span>
+                </p>
               </li>
+
               <li>
-                <a
+                {/* <a
                   href="#"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Services
-                </a>
+                </a> */}
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <p className="relative group cursor-pointer">
+                      <span className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Products
+                      </span>
+                      <span className="absolute -bottom-1 left-0 w-0 h-[6px] bg-blue-400 transition-all group-hover:w-full rounded-lg"></span>
+                    </p>
+                  </button>
+                  <div class="dropdown-content">
+                    <p className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                      GreytSpace
+                    </p>
+                    <p className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                      ChatBots
+                    </p>
+                    <p className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                      Payment Dashboard
+                    </p>
+                    <p className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                      Timesheet
+                    </p>
+                    <p className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                      Whatsapp Services
+                    </p>
+                  </div>
+                </div>
               </li>
               <li>
                 <p
+                  className="relative group cursor-pointer"
                   onClick={() => {
                     navigate("/contact-us");
                   }}
-                  className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Contact
+                  <span className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                    Contact
+                  </span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-blue-400 transition-all group-hover:w-full rounded-lg"></span>
                 </p>
               </li>
             </ul>

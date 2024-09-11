@@ -1,0 +1,8 @@
+.potential-container {
+  min-height: 600px;
+  max-height: 600px;
+  overflow-y: auto;
+  background-color: rgb(242, 245, 249);
+  padding: 30px;
+  border-radius: 10px;
+}
