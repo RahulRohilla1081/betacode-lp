@@ -460,26 +460,41 @@ function Screen1() {
               </div>
               <div className="font-mono text-gray-500 [&_span]:opacity-0">
                 <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  Growth with
+                  --check our new products
                 </span>{" "}
+                <br />
+                <span className="animate-[code-2_8s_infinite]">GreytSpace</span>
+                <br />
                 <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
+                  Accountant
                 </span>
                 <br />
-                <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
-                </span>{" "}
-                <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
+                <span className="animate-[code-2_12s_infinite]">
+                  Support Help desk
                 </span>
+                <br />
+                <span className="animate-[code-2_14s_infinite]">
+                  Payment Dashboard
+                </span>
+                <br />
+                <span className="animate-[code-2_16s_infinite]">
+                  Chatbots
+                </span>
+                <br />
+                <span className="animate-[code-2_18s_infinite]">
+                  WhatsApp Services
+                </span>
+                {/* <span className="animate-[code-4_10s_infinite]">
+                  Successfully logged-in.
+                </span> */}
                 <br />
                 <br />
                 <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
+                  Connect with Us
                 </span>
                 <br />
                 <span className="animate-[code-6_10s_infinite]">
-                  Package published.
+                  sales@betacode.com
                 </span>
               </div>
             </div>
@@ -507,8 +522,9 @@ function Screen1() {
                 <img
                   src={IMAGES.GoalAchievement}
                   style={{
-                    width: 450,
+                    width: "100%",
                     height: 450,
+                    objectFit:"cover"
                   }}
                 />
               </div>
