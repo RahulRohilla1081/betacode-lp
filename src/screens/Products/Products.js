@@ -3,20 +3,20 @@ import IMAGES from "../../assets/IMAGES";
 import Navbar from "../../components/AppDrawer/Navbar";
 import Footer from "../Dashboard/Footer";
 import "./Products.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function GreytSpace(ProductDetails) {
   const location = useLocation();
-
+  const navigate = useNavigate();
   const [ProductDetail, setProductDetails] = useState(location.state.DETAILS);
 
   useEffect(() => {
     setProductDetails(location.state.PRODUCT_DETAILS);
   }, [location.state]);
 
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -107,7 +107,15 @@ useEffect(() => {
             efficient engagement for your business.
           </p>
           <div className="flex justify-center">
-            <button className="mt-5 get-started-btn"> Book Now</button>
+            <button
+              className="mt-5 get-started-btn"
+              onClick={() => {
+                navigate("/contact-us");
+              }}
+            >
+              {" "}
+              Book Now
+            </button>
           </div>
         </div>
         <Footer />

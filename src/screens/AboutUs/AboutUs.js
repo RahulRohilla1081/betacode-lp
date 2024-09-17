@@ -5,6 +5,7 @@ import "./AboutUs.css";
 import Footer from "../Dashboard/Footer";
 
 function AboutUs() {
+  
   const PotentialArr = [
     {
       TITLE: "Commitment to Excellence",
@@ -49,11 +50,11 @@ function AboutUs() {
               }}
             >
               <p>
-                BetaCode stands as a dynamic organisation, forged by a team of
-                seasoned technology professionals deeply committed to
-                excellence. Beyond mere IT enablement, we invest wholeheartedly
-                in our people and immerse ourselves in understanding our
-                clients’ businesses.
+                <span className="text-2xl font-semibold">BetaCode</span> stands
+                as a dynamic organisation, forged by a team of seasoned
+                technology professionals deeply committed to excellence. Beyond
+                mere IT enablement, we invest wholeheartedly in our people and
+                immerse ourselves in understanding our clients’ businesses.
               </p>
               <p>
                 Operating from strategic hubs in Noida, New Delhi, Kolkata, and
@@ -163,7 +164,7 @@ function AboutUs() {
                 tangible value and foster growth.
               </p>
               <p className="text-5xl text-green-400 mt-5">
-                <span className="text-gray-400 mr-2">03</span>Mission
+                <span className="text-gray-400 mr-2">03</span>Core Values
               </p>
               <p className="mt-5 text-gray ">
                 We are committed to cultivating an enjoyable working environment
@@ -207,7 +208,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

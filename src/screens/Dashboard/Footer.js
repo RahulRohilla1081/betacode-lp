@@ -1,13 +1,21 @@
-import React from 'react'
-import "./Footer.css"
-import ICONS from '../../assets/ICONS';
+import React from "react";
+import "./Footer.css";
+import ICONS from "../../assets/ICONS";
+import { ProductArr } from "../../utils";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+
+   const navigate=useNavigate()
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-top flex justify-between">
-          <img src={ICONS.BetaCodeLogo} alt="BetaCode Logo" className="footer-logo" />
+          <img
+            src={ICONS.BetaCodeLogo}
+            alt="BetaCode Logo"
+            className="footer-logo"
+          />
           <div className="flex">
             <a href="mailto:sales@betacode.com" className="email-link flex">
               <img
@@ -64,27 +72,21 @@ function Footer() {
           <div className="footer-column">
             <h4>OUR PRODUCTS</h4>
             <ul>
-              <li>
-                <a href="#">Fleetmax</a>
-              </li>
-              <li>
-                <a href="#">Payment Dashboard</a>
-              </li>
-              <li>
-                <a href="#">SuprSales</a>
-              </li>
-              <li>
-                <a href="#">TimeSheet</a>
-              </li>
-              <li>
-                <a href="#">Vendor Connect</a>
-              </li>
-              <li>
-                <a href="#">WhatsApp Services</a>
-              </li>
-              <li>
-                <a href="#">Ask Tina</a>
-              </li>
+              {ProductArr.map((val) => {
+                return (
+                  <li
+                    onClick={() => {
+                      navigate(val.PATH, {
+                        state: {
+                          PRODUCT_DETAILS: val.DETAILS,
+                        },
+                      });
+                    }}
+                  >
+                    <p>{val.TITLE2}</p>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="footer-column">
@@ -116,7 +118,11 @@ function Footer() {
               Share your email id below to subscribe to latest news and
               information from us.
             </p>
-            <input type="email" className='min-w-full mt-2' placeholder="your email address" />
+            <input
+              type="email"
+              className="min-w-full mt-2"
+              placeholder="your email address"
+            />
             <button type="submit">SUBSCRIBE</button>
           </div>
         </div>
@@ -128,4 +134,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;

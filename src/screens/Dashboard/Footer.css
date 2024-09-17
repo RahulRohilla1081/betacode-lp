@@ -54,13 +54,14 @@
     margin-bottom: 10px;
 }
 
-.footer-column ul li a {
+.footer-column ul li p {
     color: white;
     text-decoration: none;
 }
 
-.footer-column ul li a:hover {
+.footer-column ul li p:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .subscribe-column input {

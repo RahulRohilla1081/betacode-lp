@@ -13,6 +13,9 @@ import contactUs from "./contact-us.png";
 import aboutUs from "./about-us.png";
 import connectPeople from "./connect-people.png";
 import connectBots from "./connect-bots.png";
+import timesheet from "./timesheet.png";
+import accountant from "./accountant.png";
+import support_help_desk from "./support-help-desk.png";
 export default {
   GreytSpaceLogo,
   technology,
@@ -29,4 +32,7 @@ export default {
   aboutUs,
   connectPeople,
   connectBots,
+  timesheet,
+  accountant,
+  support_help_desk,
 };

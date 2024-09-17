@@ -3,295 +3,12 @@ import IMAGES from "../../assets/IMAGES";
 import "./Screen1.css";
 import Footer from "./Footer";
 import { Link, useNavigate } from "react-router-dom";
+import { ProductArr } from "../../utils";
+
 
 function Screen1() {
   const navigate = useNavigate();
-  const ProductArr = [
-    {
-      TITLE: "GREYT SPACE",
-
-      PATH: "/product?name=greyt-space",
-      DETAILS: {
-        TITLE: "The Future is Here: An Overview on Greyt Space",
-        PROJECT_NAME: "GREYTSPACE",
-        PROJECT_IMG: IMAGES.GreytSpace_IMG,
-        PROJECT_URL: "https://greytspace.com/",
-        OVER_VIEW: [
-          {
-            SUB_TITLE:
-              "Greyt Space meeting room booking application is designed to simplify the entire booking process for companies, ensuring seamless coordination and efficient use of meeting spaces.",
-          },
-          {
-            SUB_TITLE:
-              "GreytSpace streamlines the process of reserving meeting rooms, eliminating scheduling conflicts and enhancing workplace efficiency. It provides real-time availability updates, allowing employees to book rooms instantly.",
-          },
-          {
-            SUB_TITLE:
-              "The platform integrates with calendar systems, sends automated reminders, and offers detailed usage reports to optimize room utilization.",
-          },
-          {
-            SUB_TITLE:
-              "GreytSpace is ideal for companies looking to enhance collaboration, minimize administrative overhead, and ensure that their meeting spaces are used to their full potential.",
-          },
-        ],
-        KEY_BENEFITS: [
-          {
-            SUB_BENEFIT:
-              "Effortless booking: users can quickly login and book meeting rooms in just a few clicks",
-          },
-          {
-            SUB_BENEFIT:
-              "Multi Level Approval System: Bookings follow a streamlined approval process, ensuring oversight from Admin to Building Manager.",
-          },
-          {
-            SUB_BENEFIT:
-              "Automated Billing : Generate automated invoices every month",
-          },
-          {
-            SUB_BENEFIT:
-              "Transparent Billing Details : View billing information, including hours booked by company employees, to maintain transparency and accuracy",
-          },
-          {
-            SUB_BENEFIT:
-              "Quick Setup : Easy integration with your existing systems and tools",
-          },
-          {
-            SUB_BENEFIT: "Booking Platforms: Book in MS Teams, Web & Mobile",
-          },
-        ],
-      },
-      DESCRIPTION:
-        "Greyt Space meeting room booking application is designed to simplify the entire booking process for companies, ensuring seamless coordination and efficient use of meeting spaces.",
-    },
-    {
-      TITLE: "CHATBOT",
-      PATH: "/product?name=chat-bots",
-      DETAILS: {
-        TITLE: "Automate manual work with ChatBots",
-        PROJECT_NAME: "CHATBOTS",
-        PROJECT_IMG: IMAGES.chatbots,
-        PROJECT_URL: "https://greytspace.com/",
-        OVER_VIEW: [
-          {
-            SUB_TITLE:
-              "Chatbots have emerged as transformative tools reshaping the way businesses interact with customers and streamline internal processes. These virtual assistants are revolutionizing customer service, sales, and operational efficiency across industries. ",
-          },
-          {
-            SUB_TITLE:
-              "By providing instant responses to inquiries, personalized recommendations, and automating tasks, chatbots offer a seamless and efficient way to engage with users. ",
-          },
-          {
-            SUB_TITLE:
-              "From enhancing customer engagement to boosting productivity, chatbots are leading the way towards a more streamlined future in business operations. ",
-          },
-          {
-            SUB_TITLE:
-              "GreytSpace is ideal for companies looking to enhance collaboration, minimize administrative overhead, and ensure that their meeting spaces are used to their full potential.",
-          },
-        ],
-        KEY_BENEFITS: [
-          {
-            SUB_BENEFIT:
-              "Enhances sales efficiency by simplifying access to SAP S/4HANA processes.",
-          },
-          {
-            SUB_BENEFIT:
-              "Allows sales teams to concentrate on customer interactions without distractions.",
-          },
-          {
-            SUB_BENEFIT:
-              "Speeds up access to production and process information.",
-          },
-          {
-            SUB_BENEFIT:
-              "Reduces the effort involved in routine data retrieval tasks.",
-          },
-          {
-            SUB_BENEFIT:
-              "Enhances overall productivity by streamlining information flow.",
-          },
-          {
-            SUB_BENEFIT:
-              "Provides real-time access to financial data from SAP or other systems.",
-          },
-          {
-            SUB_BENEFIT:
-              "Simplifies financial planning and decision-making processes.",
-          },
-          {
-            SUB_BENEFIT:
-              "Offers a quick, user-friendly way to retrieve crucial financial information.",
-          },
-        ],
-      },
-      DESCRIPTION:
-        "Discover our revolutionary chatbot and their profound impact on your production, sales and finance operations.",
-    },
-    {
-      TITLE: "PAYMENT DASHBOARD",
-      PATH: "/product?name=payment-dashboard",
-      DETAILS: {
-        TITLE: "Gateway to Streamlined Financial Operations",
-        PROJECT_NAME: "PAYMENT DASHBOARD",
-        PROJECT_IMG: IMAGES.PaymentDashboardImg,
-        STYLE: {
-          width: 500,
-          height: 500,
-        },
-        PROJECT_URL: "https://greytspace.com/",
-        OVER_VIEW: [
-          {
-            SUB_TITLE:
-              "Introducing the Payment Dashboard: A cutting-edge financial application meticulously crafted to revolutionize payment scheduling for businesses across all scales. This innovative platform offers a seamless solution, simplifying the intricate task of managing vendor payments through an intuitive drag-and-drop interface seamlessly integrated with calendar systems.",
-          },
-          {
-            SUB_TITLE:
-              "By empowering users to visually organize and schedule payments, the Payment Dashboard ensures timely transactions, optimizes cash flow management, and elevates financial planning to new heights of efficiency and effectiveness.",
-          },
-          {
-            SUB_TITLE:
-              "From enhancing customer engagement to boosting productivity, chatbots are leading the way towards a more streamlined future in business operations. ",
-          },
-          {
-            SUB_TITLE:
-              "Users can effortlessly schedule payments by dragging them into the desired dates on an interactive calendar. This visual approach to payment management makes planning and rescheduling payments straightforward and error-free.",
-          },
-        ],
-        KEY_BENEFITS: [
-          {
-            SUB_BENEFIT: "Simplified Payment Scheduling",
-          },
-          {
-            SUB_BENEFIT: "Seamless Vendor Management",
-          },
-          {
-            SUB_BENEFIT: "Timely Payment Reminders",
-          },
-          {
-            SUB_BENEFIT: "Insightful Financial Reporting",
-          },
-          {
-            SUB_BENEFIT: "Enhanced Security",
-          },
-        ],
-      },
-      DESCRIPTION:
-        "Say goodbye to payment scheduling hassles. Discover our advanced payment dashboard solution for your business",
-    },
-    {
-      TITLE: "TIMESHEET",
-      PATH: "/product?name=timesheet",
-      DETAILS: {
-        TITLE: "Your Ultimate Resource Management Solution",
-        PROJECT_NAME: "TIMESHEET",
-        PROJECT_IMG: IMAGES.PaymentDashboardImg,
-        STYLE: {
-          width: 500,
-          height: 500,
-        },
-        PROJECT_URL: "https://timesheet.samishti.com:4000",
-        OVER_VIEW: [
-          {
-            SUB_TITLE:
-              "Timesheet revolutionizes resource management by offering precise project and task time tracking, effortless time management, and insightful data analytics. ",
-          },
-          {
-            SUB_TITLE:
-              "With Timesheet, businesses can make informed decisions, foster employee development, and enhance productivity, ultimately maximizing the impact of their workforce on project success and business growth.",
-          },
-          {
-            SUB_TITLE:
-              "Timesheet stands as an invaluable asset for high-level management and employees alike, offering a clear overview of time allocation and contributing to informed decision-making and individual growth.",
-          },
-          {
-            SUB_TITLE:
-              "Accurately track time for every project and task, facilitating precise resource allocation and billing.",
-          },
-        ],
-        KEY_BENEFITS: [
-          {
-            SUB_BENEFIT: "Project & Task Time Tracking",
-          },
-          {
-            SUB_BENEFIT: "Effortless Time Management",
-          },
-          {
-            SUB_BENEFIT: "Insightful Data Analytics",
-          },
-          {
-            SUB_BENEFIT:
-              "Timesheet Enhances Productivity, Efficiency & Resource Management",
-          },
-          {
-            SUB_BENEFIT: "Enhanced Security",
-          },
-        ],
-      },
-      DESCRIPTION:
-        "Unlock your team's potential with Timesheet, a cutting edge resource management app leveraging time tracking for projects and tasks.",
-    },
-
-    {
-      TITLE: "WHATSAPP SERVICES",
-      PATH: "/product?name=timesheet",
-      DETAILS: {
-        TITLE: "Take Your Business to Uncharted Heights",
-        PROJECT_NAME: "WhatsApp Services",
-        PROJECT_IMG: IMAGES.WhatsappServices,
-        STYLE: {
-          // width: 500,
-          // height: 500,
-        },
-        PROJECT_URL: "https://timesheet.samishti.com:4000",
-        OVER_VIEW: [
-          {
-            SUB_TITLE:
-              "WhatsApp has become a widely-used social network, captivating users worldwide with its diverse features and user-friendly interface. ",
-          },
-          {
-            SUB_TITLE:
-              "Recognizing its immense potential, businesses are harnessing its power to transform their communication strategies and engage with customers more effectively.",
-          },
-          {
-            SUB_TITLE:
-              "This brings us to WhatsApp webhooks and business verification, that can lead to seamless integration and verified security whilst ensuring peace of mind.",
-          },
-          {
-            SUB_TITLE:
-              "Our WhatsApp services are all about enabling our business to connect with customers on the world’s most popular messaging platform, providing a secure and interactive communication experience that drives engagement and fosters trust.",
-          },
-        ],
-        KEY_BENEFITS: [
-          {
-            SUB_BENEFIT: "Real-time Updates",
-          },
-          {
-            SUB_BENEFIT: "Automated Efficiency",
-          },
-          {
-            SUB_BENEFIT: "Personalized Communication",
-          },
-          {
-            SUB_BENEFIT: "Secure Communication",
-          },
-          {
-            SUB_BENEFIT: "Build Trust",
-          },
-          {
-            SUB_BENEFIT: "Direct Customer Engagement",
-          },
-          {
-            SUB_BENEFIT: "Streamlined Automation",
-          },
-          {
-            SUB_BENEFIT: "Enhanced Customer Loyalty",
-          },
-        ],
-      },
-      DESCRIPTION:
-        "Leverage our tailored Whatsapp Services for instant engagement and cost efficiency.",
-    },
-  ];
+  
   const ServicesArr = [
     {
       TITLE: "Cloud Services",
@@ -341,60 +58,9 @@ function Screen1() {
   ];
   return (
     <section className="relative">
-      {/* <PageIllustration /> */}
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        {/* Hero content */}
         <div className="pb-12 pt-32 md:pb-20 md:pt-40">
-          {/* Section header */}
           <div className="pb-12 text-center md:pb-16">
-            {/* <div
-              className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]"
-              data-aos="zoom-y-out"
-            > */}
-            {/* <div className="-mx-0.5 flex justify-center -space-x-3">
-                <img
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={IMAGES.GreytSpaceLogo}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <img
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={IMAGES.GreytSpaceLogo}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <img
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={IMAGES.GreytSpaceLogo}
-                  width={32}
-                  height={32}
-                  alt="Avatar 02"
-                />
-                <img
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={IMAGES.GreytSpaceLogo}
-                  width={32}
-                  height={32}
-                />
-                <img
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={IMAGES.GreytSpaceLogo}
-                  width={32}
-                  height={32}
-                  alt="Avatar 04"
-                />
-                <img
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={IMAGES.GreytSpaceLogo}
-                  width={32}
-                  height={32}
-                  alt="Avatar 05"
-                />
-              </div> */}
-            {/* </div> */}
             <h1
               className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
               data-aos="zoom-y-out"
@@ -419,34 +85,8 @@ function Screen1() {
                 hands-on experience with deep technical knowledge to deliver
                 solutions tailored for your success.
               </p>
-              {/* <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
-                <div
-                  className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
-                  data-aos="zoom-y-out"
-                  data-aos-delay={450}
-                >
-                  <a
-                    className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
-                  >
-                    <span className="relative inline-flex items-center">
-                      Start Free Trial{" "}
-                      <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
-                      </span>
-                    </span>
-                  </a>
-                  <a
-                    className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
-                  >
-                    Learn More
-                  </a>
-                </div>
-              </div> */}
             </div>
           </div>
-          {/* Hero image */}
           <div
             className="mx-auto max-w-3xl"
             data-aos="zoom-y-out"
@@ -477,16 +117,11 @@ function Screen1() {
                   Payment Dashboard
                 </span>
                 <br />
-                <span className="animate-[code-2_16s_infinite]">
-                  Chatbots
-                </span>
+                <span className="animate-[code-2_16s_infinite]">Chatbots</span>
                 <br />
                 <span className="animate-[code-2_18s_infinite]">
                   WhatsApp Services
                 </span>
-                {/* <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
-                </span> */}
                 <br />
                 <br />
                 <span className="animate-[code-5_10s_infinite] text-gray-200">
@@ -524,18 +159,14 @@ function Screen1() {
                   style={{
                     width: "100%",
                     height: 450,
-                    objectFit:"cover"
+                    objectFit: "cover",
                   }}
                 />
               </div>
               <div className="flex services-container">
                 {ServicesArr.map((val) => {
                   return (
-                    <div
-                      className="card p-5 m-2 min-w-[330px]"
-
-                      // className="w-[330px] aspect-video rounded-2xl px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,theme(colors.slate.300/.8),transparent)1]"
-                    >
+                    <div className="card p-5 m-2 min-w-[330px]">
                       <p
                         className={val.CLASS_NAME}
                         style={{
@@ -567,7 +198,14 @@ function Screen1() {
                 <p className="text-xl text-white font-normal">
                   Get free consultant from our leading experts and
                 </p>
-                <button className="mt-5 get-started-btn"> Get Started</button>
+                <button
+                  className="mt-5 get-started-btn"
+                  onClick={() => {
+                    navigate("/contact-us");
+                  }}
+                >
+                  Get Started
+                </button>
               </div>
             </div>
             <div className=" mt-5 flex p-2 bg-white card min-w-full">
@@ -591,7 +229,7 @@ function Screen1() {
                       <>
                         <div className="product-card">
                           <p
-                            to={val.PATH}
+                        
                             onClick={() => {
                               navigate(val.PATH, {
                                 state: {
