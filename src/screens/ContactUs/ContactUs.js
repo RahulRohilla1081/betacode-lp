@@ -79,7 +79,7 @@ function ContactUs() {
       PLACEHOLDER: "Select Company",
     },
     {
-      TITLE: "Company SIze",
+      TITLE: "Company Size",
       DROPDOWN: true,
       INPUT_TYPE: "text",
 

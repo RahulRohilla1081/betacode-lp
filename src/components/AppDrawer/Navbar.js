@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import "./Navbar.css";
 import { ProductArr } from "../../utils";
+import IMAGES from "../../assets/IMAGES";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ function Navbar() {
   useEffect(() => {
     setPathName(location.pathname);
   }, [location]);
-  console.log("Asdaskjbdjhsadsad", location);
+  console.log("Asdaskjbdjhsadsad", location.pathname + location.search);
 
   return (
     <div>
@@ -119,31 +120,37 @@ function Navbar() {
                   <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-blue-400 transition-all group-hover:w-full rounded-lg"></span>
                 </p>
               </li>
-
               <li>
-                {/* <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Services
-                </a> */}
                 <div class="dropdown">
-                  <button class="dropbtn">
+                  <button class="dropbtn ">
                     <p className="relative group cursor-pointer">
                       <span
                         className={`${
                           pathName == "/product"
                             ? " text-blue-700 "
                             : " text-gray-900 "
-                        } cursor-pointer block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 `}
+                        } cursor-pointer block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 flex items-center`}
                       >
                         Products
+                        <img
+                          src={ICONS.down_arrow}
+                          style={{
+                            width: 15,
+                            height: 15,
+                          }}
+                        />
                       </span>
                       <span className="absolute -bottom-1 left-0 w-0 h-[6px] bg-blue-400 transition-all group-hover:w-full rounded-lg"></span>
                     </p>
                   </button>
                   <div class="dropdown-content">
                     {ProductArr.map((val) => {
+                      console.log(
+                        "Asdahsbdhjsad",
+                        val.PATH,
+                        location.pathname + location.search == val.PATH
+                      );
+
                       return (
                         <p
                           onClick={() => {
@@ -153,24 +160,17 @@ function Navbar() {
                               },
                             });
                           }}
-                          className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                          style={{
+                            color:
+                              location.pathname + location.search == val.PATH &&
+                              "#3250D6",
+                          }}
+                          className={`cursor-pointer block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
                         >
                           {val.TITLE2}
                         </p>
                       );
                     })}
-                    {/* <p className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                      ChatBots
-                    </p>
-                    <p className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                      Payment Dashboard
-                    </p>
-                    <p className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                      Timesheet
-                    </p>
-                    <p className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                      Whatsapp Services
-                    </p> */}
                   </div>
                 </div>
               </li>

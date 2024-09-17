@@ -248,7 +248,7 @@ export const ProductArr = [
     TITLE: "CONTACT MANAGEMENT",
     TITLE2: "Contact Management",
 
-    PATH: "/product?name=payment-dashboard",
+    PATH: "/product?name=contact-management",
     DETAILS: {
       TITLE: "Gateway to Streamlined Financial Operations",
       PROJECT_NAME: "PAYMENT DASHBOARD",
@@ -360,7 +360,7 @@ export const ProductArr = [
   {
     TITLE: "WHATSAPP SERVICES",
     TITLE2: "WhatsApp Services",
-    PATH: "/product?name=timesheet",
+    PATH: "/product?name=whatsapp-services",
     DETAILS: {
       TITLE: "Take Your Business to Uncharted Heights",
       PROJECT_NAME: "WhatsApp Services",
