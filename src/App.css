@@ -51,6 +51,14 @@
  background: linear-gradient(90deg, #0d47a1, #1976d2, #42a5f5);
 
 }
+@media only screen and (max-width: 600px) {
+.innovation-blue-text {
+  font-size: 3rem; /* Adjust the size as needed */
+}
+.innovation-orange-text {
+  font-size: 3rem; /* Adjust the size as needed */
+}
+}
 
 @keyframes App-logo-spin {
   from {

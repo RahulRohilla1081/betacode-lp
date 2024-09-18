@@ -68,11 +68,11 @@ function Screen1() {
             >
               YOUR TECHNOLOGY PARTNER FOR <br className="max-lg:hidden" />
               <span className="innovation-blue-text">INNOVATION</span>
-              <br className="max-lg:hidden" />
+              <br />
               AND
-              <br className="max-lg:hidden" />
+              <br />
               <span className="innovation-orange-text"> GROWTH</span>
-              <br className="max-lg:hidden" />
+              <br />
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -218,12 +218,12 @@ function Screen1() {
                 </button>
               </div>
             </div>
-            <div className=" mt-5 flex p-2 bg-white card min-w-full">
+            <div className=" mt-5 flex p-2 bg-white card ">
               <div>
                 <div className="flex justify-center">
                   <div>
                     <p className="text-5xl text-center">Our Products</p>
-                    <p className="mt-2 text-base font-medium w-[700px] text-center text-gray">
+                    <p className="mt-2 text-base font-medium  text-center text-gray">
                       Built to serve the best interests of our clients. Catering
                       to global clientele, our solutions are focused on
                       facilitating operations, enhancing better integration

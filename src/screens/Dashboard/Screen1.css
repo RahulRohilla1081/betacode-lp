@@ -69,6 +69,22 @@
   z-index: 0;
   overflow: hidden;
 }
+@media only screen and (max-width: 600px) {
+.card1 {
+  display: block;
+  position: relative;
+  max-width: 305px;
+  min-height: 120px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 10px 10px;
+
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+}
+}
 
 .card1:before {
   content: "";
