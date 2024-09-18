@@ -106,20 +106,30 @@ function Screen1() {
                 <span className="animate-[code-2_8s_infinite]">GreytSpace</span>
                 <br />
                 <span className="animate-[code-2_10s_infinite]">
-                  Accountant
+                  Support Help desk
                 </span>
                 <br />
                 <span className="animate-[code-2_12s_infinite]">
-                  Support Help desk
+                  Accountant
                 </span>
                 <br />
                 <span className="animate-[code-2_14s_infinite]">
                   Payment Dashboard
                 </span>
                 <br />
-                <span className="animate-[code-2_16s_infinite]">Chatbots</span>
+                <span className="animate-[code-2_16s_infinite]">
+                  Contact Management
+                </span>
                 <br />
                 <span className="animate-[code-2_18s_infinite]">
+                  Vendor Management
+                </span>
+                <br />
+                <span className="animate-[code-2_20s_infinite]">Timesheet</span>
+                <br />
+                <span className="animate-[code-2_22s_infinite]">Chatbots</span>
+                <br />
+                <span className="animate-[code-2_24s_infinite]">
                   WhatsApp Services
                 </span>
                 <br />
@@ -229,7 +239,6 @@ function Screen1() {
                       <>
                         <div className="product-card">
                           <p
-                        
                             onClick={() => {
                               navigate(val.PATH, {
                                 state: {

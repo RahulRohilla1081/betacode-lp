@@ -251,14 +251,14 @@ export const ProductArr = [
     PATH: "/product?name=contact-management",
     DETAILS: {
       TITLE: "Gateway to Streamlined Financial Operations",
-      PROJECT_NAME: "PAYMENT DASHBOARD",
+      PROJECT_NAME: "CONTACT MANAGEMENT",
       PROJECT_IMG: IMAGES.connectPeople,
       STYLE: {
         width: "100%",
         height: 500,
         objectFit: "cover",
       },
-      PROJECT_URL: "https://greytspace.com/",
+      PROJECT_URL: "https://cms.betacodeinfotech.com/",
       OVER_VIEW: [
         {
           SUB_TITLE:
@@ -302,6 +302,66 @@ export const ProductArr = [
     },
     DESCRIPTION:
       "CMS helps organizations manage client data for promotions and brand campaigns via emails and WhatsApp, integrated with third-party services and Microsoft Teams, enabling seamless access for employees.",
+  },
+  {
+    TITLE: "Vendor Management",
+    TITLE2: "Vendor Management",
+
+    PATH: "/product?name=vendor-management",
+    DETAILS: {
+      TITLE: "Streamlines the onboarding new vendors and customers ",
+      PROJECT_NAME: "VENDOR MANAGEMENT",
+      PROJECT_IMG: IMAGES.connectPeople,
+      STYLE: {
+        width: "100%",
+        height: 500,
+        objectFit: "cover",
+      },
+      PROJECT_URL: "https://mdm-saas.vercel.app/",
+      OVER_VIEW: [
+        {
+          SUB_TITLE:
+            "Provides a centralized view of vendor/customer records, eliminating duplicates and ensuring that all departments are working with up-to-date information.",
+        },
+        {
+          SUB_TITLE:
+            "Streamlines the process of onboarding new vendors and customers by collecting, validating, and approving master data (like contact details, tax information, and banking details) in a structured manner.",
+        },
+        {
+          SUB_TITLE:
+            "Automatically validates vendor and customer data against external sources (e.g., government databases, tax registries) to ensure accuracy before onboarding.",
+        },
+        {
+          SUB_TITLE:
+            "Syncs master data between the MDM system and SAP, so that changes or updates (such as vendor addresses or customer contract terms) are reflected in real-time",
+        },
+      ],
+      KEY_BENEFITS: [
+        {
+          SUB_BENEFIT: "Onboarding Process Automation",
+        },
+        {
+          SUB_BENEFIT: "Data Validation and Standardization",
+        },
+        {
+          SUB_BENEFIT: "Integration with SAP for Master Data Maintenance",
+        },
+        {
+          SUB_BENEFIT: "Enhanced Master Data Governance",
+        },
+        {
+          SUB_BENEFIT: "Vendor/Customer Relationship Management",
+        },
+        {
+          SUB_BENEFIT: "Risk Mitigation",
+        },
+        {
+          SUB_BENEFIT: "Reports and Analytics",
+        },
+      ],
+    },
+    DESCRIPTION:
+      "MDM is essential for ensuring that the core data within an organization, such as vendor or customer information, is accurate and consistent across all systems. In the case of your MDM tool integrated with SAP",
   },
   {
     TITLE: "TIMESHEET",
