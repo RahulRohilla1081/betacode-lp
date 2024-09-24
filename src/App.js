@@ -8,6 +8,7 @@ import Products from "./screens/Products/Products";
 import ContactUs from "./screens/ContactUs/ContactUs";
 import AboutUs from "./screens/AboutUs/AboutUs";
 import { useEffect } from "react";
+import PrivacyPolicy from "./screens/PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
         <Route path={"/contact-us"} element={<ContactUs />} />
         <Route path={"/about-us"} element={<AboutUs />} />
         <Route path={"/testing"} element={<Testing />} />
+        <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
   );

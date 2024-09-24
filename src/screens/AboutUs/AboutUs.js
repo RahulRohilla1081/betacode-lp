@@ -56,13 +56,13 @@ function AboutUs() {
                 mere IT enablement, we invest wholeheartedly in our people and
                 immerse ourselves in understanding our clients’ businesses.
               </p>
-              <p>
+              {/* <p>
                 Operating from strategic hubs in Noida, New Delhi, Kolkata, and
                 Pune, our global footprint spans over 200 clients across diverse
                 industrial sectors, such as FMCG, Hi -Tech, Chemicals, Pharma
                 etc. Since our inception in 2014, our journey has been nothing
                 short of unwavering growth and dedication.
-              </p>
+              </p> */}
               <p>
                 At our core lies a steadfast commitment to resolving business
                 challenges and delivering top-tier, sustainable solutions. We

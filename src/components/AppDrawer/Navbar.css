@@ -3,6 +3,20 @@
   float: left;
   overflow: hidden;
 }
+ul {
+  list-style-type: none; /* Removes bullet points */
+}
+nav ul {
+  list-style-type: none; /* Removes the bullets */
+  padding: 0; /* Optional: removes extra space */
+  margin: 0; /* Optional: removes extra space */
+}
+
+/* Optional: Style the list items */
+nav ul li {
+  display: inline; /* Make the list items horizontal */
+  margin-right: 15px; /* Adds space between items */
+}
 
 /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
@@ -22,7 +36,7 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 250px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   /* margin-top: 28px; */
 }
@@ -45,4 +59,3 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-

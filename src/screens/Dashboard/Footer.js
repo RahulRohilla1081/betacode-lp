@@ -5,12 +5,11 @@ import { ProductArr } from "../../utils";
 import { useNavigate } from "react-router-dom";
 
 function Footer() {
-
-   const navigate=useNavigate()
+  const navigate = useNavigate();
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer-top flex justify-between">
+        <div className="footer-top flex grid grid-col-1 lg:grid-cols-2">
           <img
             src={ICONS.BetaCodeLogo}
             alt="BetaCode Logo"
@@ -44,10 +43,16 @@ function Footer() {
             <h4>EXPLORE</h4>
             <ul>
               <li>
-                <a href="#">About Us</a>
+                <p
+                  onClick={() => {
+                    navigate("about-us");
+                  }}
+                >
+                  About Us
+                </p>
               </li>
-              <li>
-                <a href="#">Leadership</a>
+              {/* <li>
+                <p href="#">Leadership</p>
               </li>
               <li>
                 <a href="#">Blogs</a>
@@ -60,12 +65,24 @@ function Footer() {
               </li>
               <li>
                 <a href="#">Case Studies</a>
+              </li> */}
+              <li>
+                <p
+                  onClick={() => {
+                    navigate("/contact-us");
+                  }}
+                >
+                  Contact Us
+                </p>
               </li>
               <li>
-                <a href="#">Contact Us</a>
-              </li>
-              <li>
-                <a href="#">Privacy Policy</a>
+                <p
+                  onClick={() => {
+                    navigate("/privacy-policy");
+                  }}
+                >
+                  Privacy Policy
+                </p>
               </li>
             </ul>
           </div>
@@ -89,7 +106,7 @@ function Footer() {
               })}
             </ul>
           </div>
-          <div className="footer-column">
+          {/* <div className="footer-column">
             <h4>SERVICES</h4>
             <ul>
               <li>
@@ -111,7 +128,7 @@ function Footer() {
                 <a href="#">Support &amp; Maintenance Services</a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="footer-column subscribe-column">
             <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
             <p>

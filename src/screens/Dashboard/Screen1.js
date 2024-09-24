@@ -5,10 +5,9 @@ import Footer from "./Footer";
 import { Link, useNavigate } from "react-router-dom";
 import { ProductArr } from "../../utils";
 
-
 function Screen1() {
   const navigate = useNavigate();
-  
+
   const ServicesArr = [
     {
       TITLE: "Cloud Services",
